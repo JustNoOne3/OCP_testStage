@@ -1,0 +1,74 @@
+@import '/vendor/filament/filament/resources/css/theme.css';
+@import '../../../../vendor/kenepa/banner/resources/css/index.css';
+
+@config 'tailwind.config.js';
+
+
+/* AUTH */
+.fi-logo {
+    @apply !h-10;
+}
+
+.fi-logo::after {
+    content: "ERS"
+}
+
+
+
+
+/* BODY */
+
+.fi-body {
+    background-image: url('../../../../public/images/dash-bg4.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.dark .fi-body {
+    background-image: url('../../../../public/images/dark-dash-bg.png');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+
+/* TOPBAR */
+.fi-topbar nav {
+    @apply !ring-0 py-2 !border-none;
+    background-color: #0A083B;
+    opacity: 90%; 
+}
+
+.dark .fi-topbar nav{
+    opacity: 90%;
+}
+
+.fi-topbar-item-label{
+    font-weight: bold;
+}
+
+
+/* Content */
+.fi-main {
+    @apply lg:pl-12 !important;
+}
+
+.fi-ta-ctn {
+    @apply shadow-xl;
+}
+
+.fi-header-heading {
+    @apply !text-2xl text-primary-600 dark:text-primary-400;
+    color: #ffff;
+}
+
+.fi-header-subheading {
+    @apply !text-sm;
+}
+
+
+
+/* Filament Actions */
+.fi-dropdown-trigger button.fi-btn {
+    @apply !p-1;
+}
