@@ -39,6 +39,9 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Responses\LogoutResponse;
 use Filament\Http\Responses\Auth\Contracts\LogoutResponse as LogoutResponseContract;
 
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\URL;
+
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -54,6 +57,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     { 
+        if(App::environment('production')){
+			URL::forceScheme('https');
+		}
         User::observe(UserObserver::class);
         Establishment::observe(EstablishmentObserver::class);
         Month13th::observe(Month13thObserver::class);
