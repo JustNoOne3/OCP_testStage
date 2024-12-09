@@ -281,7 +281,7 @@ class EmployeesResource extends Resource
     {
         return [
             'index' => Pages\ListEmployees::route('/'),
-            'edit' => Pages\EditEmployees::route('/{record}/edit'),
+            // 'edit' => Pages\EditEmployees::route('/{record}/edit'),
         ];
     }
 }

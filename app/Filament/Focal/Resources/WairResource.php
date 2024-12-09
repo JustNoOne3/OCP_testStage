@@ -79,8 +79,8 @@ class WairResource extends Resource
     {
         return [
             'index' => Pages\ListWairs::route('/'),
-            'create' => Pages\CreateWair::route('/create'),
-            'edit' => Pages\EditWair::route('/{record}/edit'),
+            // 'create' => Pages\CreateWair::route('/create'),
+            // 'edit' => Pages\EditWair::route('/{record}/edit'),
         ];
     }
 }

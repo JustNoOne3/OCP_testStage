@@ -157,8 +157,8 @@ class FlexibleWorkResource extends Resource
     {
         return [
             'index' => Pages\ListFlexibleWorks::route('/'),
-            'create' => Pages\CreateFlexibleWork::route('/create'),
-            'edit' => Pages\EditFlexibleWork::route('/{record}/edit'),
+            // 'create' => Pages\CreateFlexibleWork::route('/create'),
+            // 'edit' => Pages\EditFlexibleWork::route('/{record}/edit'),
         ];
     }
 }

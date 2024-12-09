@@ -76,8 +76,8 @@ class TeleReportResource extends Resource
     {
         return [
             'index' => Pages\ListTeleReports::route('/'),
-            'create' => Pages\CreateTeleReport::route('/create'),
-            'edit' => Pages\EditTeleReport::route('/{record}/edit'),
+            // 'create' => Pages\CreateTeleReport::route('/create'),
+            // 'edit' => Pages\EditTeleReport::route('/{record}/edit'),
         ];
     }
 }

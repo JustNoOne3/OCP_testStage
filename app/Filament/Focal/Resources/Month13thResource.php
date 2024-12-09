@@ -248,8 +248,8 @@ class Month13thResource extends Resource
     {
         return [
             'index' => Pages\ListMonth13ths::route('/'),
-            'create' => Pages\CreateMonth13th::route('/create'),
-            'edit' => Pages\EditMonth13th::route('/{record}/edit'),
+            // 'create' => Pages\CreateMonth13th::route('/create'),
+            // 'edit' => Pages\EditMonth13th::route('/{record}/edit'),
         ];
     }
 }
