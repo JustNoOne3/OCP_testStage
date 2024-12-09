@@ -24,6 +24,7 @@ class EmpObserver
             $microseconds = substr(explode('.', microtime(true))[1], 0, 6); // Limit microseconds to 6 digits
             $uuid = 'emp-' . substr($uuid, 0, 12) . '-' . $microseconds;
             $employees->id = $uuid;
+            $employees->emp_isActive = 1;
             $employees->emp_estabId = Auth::user()->est_id;
         }
     }

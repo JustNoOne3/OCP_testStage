@@ -45,7 +45,7 @@ class EmployeeTable extends Component implements HasForms, HasTable
     {
         session()->put('selected_count', 0);
         return $table
-            ->query(Employees::query()->where('emp_estabId', Auth::user()->est_id))
+            ->query(Employees::query()->where('emp_estabId', Auth::user()->est_id)->where('emp_isActive', 1))
             ->columns([
                 TextColumn::make('emp_lastName')
                     ->label('Last Name')

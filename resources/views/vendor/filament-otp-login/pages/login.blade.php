@@ -1,4 +1,9 @@
 <x-filament-panels::page.simple>
+    <style>
+        .exist_button:hover{
+            background-color: rgb(163 230 53);
+        }
+    </style>
     @if (filament()->hasRegistration())
         <x-slot name="subheading">
             {{ __('filament-panels::pages/auth/login.actions.register.before') }}
@@ -8,7 +13,9 @@
     @endif
 
     {{ \Filament\Support\Facades\FilamentView::renderHook(\Filament\View\PanelsRenderHook::AUTH_LOGIN_FORM_BEFORE, scopes: $this->getRenderHookScopes()) }}
+    
 
+    
     @switch($this->step)
 
         @case(1)
@@ -19,6 +26,9 @@
                     :actions="$this->getCachedFormActions()"
                     :full-width="true"
                 />
+                <x-filament::button tag="button" onclick="window.location.href = 'register'" size="lg" class="exist_button" style="background-color: rgb(132 204 22);" >
+                    With Existing ERS Account
+                </x-filament::button>
             </x-filament-panels::form>
             @break
         @default

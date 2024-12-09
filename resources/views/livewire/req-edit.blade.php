@@ -1,8 +1,8 @@
 <x-filament::modal id="modal-tav" width="5xl">
 
 
-    <x-slot name="trigger" style="height: 100%;">
-        <x-filament::button color="danger"  style="margin: 15px; width: 100%;">
+    <x-slot name="trigger" style="height: 100%; right: 0;">
+        <x-filament::button color="danger" class="req-btn" style="margin: 15px; width: 100%;">
             Request for Editing
         </x-filament::button>
     </x-slot>

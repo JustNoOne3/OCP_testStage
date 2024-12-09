@@ -241,7 +241,9 @@
             <div class="container">
                 <div class="row items-center">
                     <div class="col lg:w-6/12">
-                        <h2 class="letter-spacing-xs h2 -mb-1 font-mono font-semibold text-left text-info-400" attr="value">Welcome to</h2>
+                        <h2 class="letter-spacing-xs text-3xl -mb-1 font-mono font-semibold text-left text-slate-400" attr="value">Welcome to</h2>
+                        {{-- <h1 class="tracking-wider font-mono italic  display-2 font-bold text-secondary">DOLE</h1> --}}
+                        <img class="mt-2 mb-6" src="{{asset('images/dole_logo2.png')}}" alt="">
                         <h1 class="letter-spacing-xs mb-6 font-sans display-2 font-semibold text-primary">Online Compliance Portal</h1>
                         <p class="mt-14 text-base text-muted">
                             Your one stop portal for report submission. Accomodating your Telecommuting, Flexible Work Arrangement, 13th month, and Work Accident / Illness Reports. <br>

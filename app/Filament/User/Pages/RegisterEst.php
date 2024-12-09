@@ -428,6 +428,7 @@ class RegisterEst extends Page implements HasForms
                                         ->native(false)
                                         ->label("Year the payment method was implemented")
                                         ->options([
+                                            'Since 2024' => 'Since 2024',
                                             'Since 2023' => 'Since 2023',
                                             'Since 2022' => 'Since 2022',
                                             'Since 2021' => 'Since 2021',
