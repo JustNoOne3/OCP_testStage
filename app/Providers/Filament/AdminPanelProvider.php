@@ -42,7 +42,7 @@ class AdminPanelProvider extends PanelProvider
             ->emailVerification(EmailVerification::class)
             ->favicon(fn (GeneralSettings $settings) => Storage::url($settings->site_favicon))
             ->brandName(fn (GeneralSettings $settings) => $settings->brand_name)
-            ->favicon(asset('storage/sites/favicon.ico'))
+            ->favicon(asset('images/favicon.ico'))
             ->brandLogo(fn (GeneralSettings $settings) => Storage::url($settings->brand_logo))
             ->brandLogo(asset('storage/sites/logo.png'))
             ->brandLogoHeight(fn (GeneralSettings $settings) => $settings->brand_logoHeight)

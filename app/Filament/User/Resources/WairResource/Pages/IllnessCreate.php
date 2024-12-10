@@ -17,6 +17,7 @@ use Filament\Forms\Components\Section;
 use Filament\Forms;  
 use Filament\Forms\Get;
 use Illuminate\Support\Facades\Blade;
+use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Support\HtmlString;
 use Illuminate\Support\Facades\Auth;
 use Filament\Forms\Set;

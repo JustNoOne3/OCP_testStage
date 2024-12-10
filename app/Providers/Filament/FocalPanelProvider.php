@@ -39,7 +39,7 @@ class FocalPanelProvider extends PanelProvider
             
             ->login(Login::class)
             ->emailVerification()
-            ->favicon(asset('storage/sites/favicon.ico'))
+            ->favicon(asset('images/favicon.ico'))
             ->brandName(fn (GeneralSettings $settings) => $settings->brand_name)
             ->brandLogo(asset('storage/sites/logo.png'))
             ->brandLogoHeight(fn (GeneralSettings $settings) => $settings->brand_logoHeight)

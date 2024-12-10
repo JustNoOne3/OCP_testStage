@@ -153,6 +153,7 @@ return array(
     'BezhanSalleh\\FilamentShield\\' => array($vendorDir . '/bezhansalleh/filament-shield/src'),
     'BezhanSalleh\\FilamentExceptions\\Database\\Factories\\' => array($vendorDir . '/bezhansalleh/filament-exceptions/database/factories'),
     'BezhanSalleh\\FilamentExceptions\\' => array($vendorDir . '/bezhansalleh/filament-exceptions/src'),
+    'Bepsvpt\\SecureHeaders\\' => array($vendorDir . '/bepsvpt/secure-headers/src'),
     'BaconQrCode\\' => array($vendorDir . '/bacon/bacon-qr-code/src'),
     'App\\' => array($baseDir . '/app', $vendorDir . '/laravel/pint/app'),
     'AnourValar\\EloquentSerialize\\' => array($vendorDir . '/anourvalar/eloquent-serialize/src'),
